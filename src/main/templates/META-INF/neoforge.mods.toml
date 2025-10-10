@@ -1,5 +1,5 @@
 modLoader = "javafml"
-loaderVersion = "[${forge_version},)"
+loaderVersion = "[2,)"
 issueTrackerURL = "${mod_issue_tracker}"
 license = "${mod_license}"
 
@@ -23,7 +23,10 @@ logoFile = ""
 displayURL = "${mod_url}"
 credits = ""
 
+[[mixins]]
+config = "mixins.ae2webintegration.json"
+
 [[dependencies.ae2webintegration_interface]]
 modId = "ae2"
 mandatory = true
-versionRange = "[15.0.18,)"
+versionRange = "[19.2.4,)"
