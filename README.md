@@ -82,7 +82,7 @@ token mechanism is the same as in public mode.
 - Start the server
 - You can now find the config in /configs/ae2webintegration/ae2webintegration.toml (or .cfg on older mc versions). Edit the port number and password protection for your needs
 - **Disable public mode if you play by yourself**
-- Reload the config (/ae2webintegration reload) or restart the server
+- [This step is done automatically by config watcher since 1.21.1, you can still force reload if it didn't worked!] Reload the config (/ae2webintegration reload) or restart the server
 - Make sure you have opened the configured port (firewall, redirections) if you want to use it on public internet
 - Now you can visit http://your-server-ip-or-domain:configured-port/ and login should appear on your browser!
 - **There is a default user Admin which password is set in the config**
@@ -103,7 +103,7 @@ token mechanism is the same as in public mode.
 
 # Compatibility
 
-The mod is currently implemented only on 1.20.1, 1.12.2 and 1.7.10 versions, although it might change in the future!   
+The mod is currently implemented only on 1.21.1 (NEO), 1.20.1, 1.12.2 and 1.7.10 versions, although it might change in the future!   
 A few remarks about compatibility:
 - 1.7.10 version is based on [GTNH fork of AE2](https://github.com/GTNewHorizons/Applied-Energistics-2-Unofficial) and [GTNH fork AE2FC for 1.7.10](https://github.com/GTNewHorizons/AE2FluidCraft-Rework)
 - 1.12.2 version is based on [AE2-UEL](https://github.com/AE2-UEL/Applied-Energistics-2) and [AE2FC for 1.12.2](https://github.com/AE2-UEL/AE2FluidCraft-Rework/)
