@@ -1340,28 +1340,6 @@
     updateCPUList();
     getItemList();
 
-    function showAlertIfOutdated() {
-        if (isOutdated && isAdmin){
-            if (getCookie("DoNotShowUpdateMessage") == 1) return;
-            pushTopMessage("<span>New version detected! Consider updating from <a href='https://github.com/kuba6000/AE2-Web-Integration/releases/'>github</a></span> <button onclick='closeTopMessage(this.parentElement);'>Close</button><button onclick='updateDoNotShowAgain(this.parentElement);'>Hide for 7 days</button><br style='clear: both;'/>");
-        }
-        else
-        {
-            setCookie("DoNotShowUpdateMessage", 0, 0);
-        }
-    }
-    setTimeout(showAlertIfOutdated, 100);
-
-    function updateDoNotShowAgain(el){
-        setCookie("DoNotShowUpdateMessage", 1, 7);
-        closeTopMessage(el);
-    }
-
-    function showAlert(text){
-        let o = document.getElementById('alertoverlay');
-        o.innerHTML = "<section onclick='this.remove();'>" + text + "</section>" + o.innerHTML;
-    }
-
     topMessages = [];
     function pushTopMessage(message){
         topMessages.push(message);
@@ -1407,9 +1385,5 @@
     }
 
 </script>
-<br><br>
-<footer>
-    This service is hosted using <a href="https://github.com/kuba6000/AE2-Web-Integration">AE2 Web Integration</a> Made by <a href="https://github.com/kuba6000">@kuba6000</a>
-</footer>
 </body>
 </html>
